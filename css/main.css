@@ -1,0 +1,262 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 0.05em;
+	font-size: 15px;
+	font-weight: 500;
+	color: #304041;
+}
+
+
+.container {
+	width: 1140px;
+	margin: 0 auto;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	text-transform: uppercase;
+
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+/* Header section */
+.header {
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.19) 1.39%, rgba(36, 32, 84, 0.51) 44.44%), url(../img/background.jpeg) no-repeat;
+	background-size: cover;
+	text-align: center;
+	color: #ffffff;
+	padding-top: 90px;
+	padding-bottom: 78px;
+}
+
+.logo {}
+
+.logo__img {}
+
+.offer {}
+
+.offer__subtitle {
+	text-transform: uppercase;
+	background: #ffffff;
+	font-weight: 800;
+	border-radius: 78px;
+	color: #000000;
+	display: inline-block;
+	padding: 8px 17px;
+	margin-top: 200px;
+}
+
+.offer__title {
+	font-size: 60px;
+	margin: 24px 0;
+}
+
+.offer__text {
+	font-size: 20px;
+	margin: 24px 0;
+}
+
+.btn {
+	padding: 18px 0;
+	border-radius: 119px;
+	font-weight: 800;
+	font-size: 16px;
+	transition: all 0.5s ease;
+	text-align: center;
+}
+
+.offer__btn {
+	background: #5F51FF;
+	color: #FFFFFF;
+	margin-bottom: 217px;
+	width: 247px;
+}
+
+.offer__btn:hover {
+	background: #524AB5;
+}
+
+.arrow-down {
+	background: url(../img/arrow-down.svg) no-repeat;
+	width: 18px;
+	height: 27px;
+	opacity: 0.5;
+	transition: all 0.5s ease;
+}
+
+.arrow-down:hover {
+	opacity: 1;
+}
+
+
+/* Routes section */
+.routes {
+	padding-top: 145px;
+}
+
+.section-title {
+	text-align: center;
+	font-size: 30px;
+	padding-bottom: 95px;
+}
+
+.route {
+	display: flex;
+	background: #F1F0FF;
+}
+
+.route__info {
+	padding: 110px 73px;
+}
+
+.route__number {
+	color: #789AA0;
+	text-transform: uppercase;
+}
+
+.route__title {
+	font-size: 24px;
+	margin: 20px 0 40px 0;
+}
+
+.route__detail {
+	background: url(../img/arrow-next.png);
+	width: 68px;
+	height: 17px;
+	opacity: 0;
+	transition: all 0.7s ease;
+
+	margin-top: 47px;
+}
+
+.route__info:hover .route__detail {
+	opacity: 1;
+}
+
+.route__img {
+	display: flex;
+	align-items: center;
+}
+
+.route__img img {
+	/*object-fit: fill;*/
+	height: 649px;
+	width: 476px;
+	margin: 0 auto;
+}
+
+.ghost-btn {
+	display: block;
+	margin: 0 auto;
+	color: #3B2FC7;
+	border: 1px solid #3B2FC7;
+	width: 332px;
+	margin-top: 90px;
+}
+
+.ghost-btn:hover {
+	background: #3B2FC7;
+	color: #ffffff;
+}
+
+
+/* Capability section */
+.capability {
+	padding-top: 145px;
+}
+
+.capability-content {
+	background: url(../img/Church-of-the-Savior-on-Blood.jpg) no-repeat right top;
+	background-size: 50%;
+	height: 626px;
+}
+
+.capability-content__list {
+	list-style: none;
+	padding: 0;
+	font-size: 16px;
+	width: 407px;
+}
+
+.capability-content__item {
+	margin-bottom: 60px;
+}
+
+.capability-content__item:last-child {
+	margin-bottom: 0;
+}
+
+.capability-content__item:before {
+	content: '';
+	display: block;
+	width: 64px;
+	height: 7px;
+	background: #5F51FF;
+	border-radius: 23px;
+	margin-bottom: 15px;
+}
+
+.capability-container {
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+/* Footer section */
+.footer {
+	padding: 147px 0 165px 0;
+}
+
+.footer__text {
+	margin-right: 60px;
+	display: inline-block;
+	font-size: 14px;
+}
+
+/* Media requests */
+
+@media screen and (max-width: 1752px) {
+	.capability-content {
+		background-size: 55%;
+	}
+}
+
+@media screen and (max-width: 1387px) {
+	.capability-content {
+		background-size: 60%;
+	}
+
+}
+
+@media screen and (max-width: 1024px) {
+	.container {
+		width: 900px;
+	}
+
+	.route {
+		flex-direction: column;
+		padding-bottom: 70px;
+	}
+	
+	.capability-content {
+		background: linear-gradient(180deg, #DCF7FF 22.92%, #2F6E82 45.31%, rgba(236, 249, 248, 0.03) 99.99%, rgba(255, 255, 255, 0) 100%), url(../img/Church-of-the-Savior-on-Blood.jpg);
+		background-blend-mode: color, normal;
+		background-size: cover;
+		color: #ffffff;
+	}
+
+	.capability-content__list {
+		margin: 0 auto;
+		width: auto;
+		font-size: 30px;
+		text-shadow: 2px 2px #000000;
+	}
+
+}
